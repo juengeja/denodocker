@@ -1,5 +1,12 @@
-import { serve } from "https://deno.land/std/http/server.ts";
+import { opine } from "https://deno.land/x/opine@2.1.4/mod.ts";
 
-serve(req => new Response("Hello world from Deno!"), { addr: ":8088" });
+const app = opine();
 
-console.log(`HTTP server is running at: http://localhost:8088/`);
+app.get("/", function (req, res) {
+  res.send("Hello World");
+});
+
+app.listen(
+  8088,
+  () => console.log("server has started on http://localhost:8088 🚀"),
+);
