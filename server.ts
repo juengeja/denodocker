@@ -1,4 +1,4 @@
-import { opine } from "https://deno.land/x/opine@2.1.4/mod.ts";
+import { opine } from "https://deno.land/x/opine/mod.ts";
 
 const app = opine();
 
