@@ -7,6 +7,6 @@ app.get("/", function (req, res) {
 });
 
 app.listen(
-  3000,
-  () => console.log("server has started on http://localhost:3000 🚀"),
+  3005,
+  () => console.log("server has started on http://localhost:3005 🚀"),
 );
